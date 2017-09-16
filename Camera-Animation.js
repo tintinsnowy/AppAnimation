@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 
 export default class App extends React.Component {
-	// 构造
+	// generate the item
 	constructor(props) {
 		super(props);
-		// 初始状态
+		// ilitialize
 		this.state = {
 			bounceValue: new Animated.Value(0),
 			rotateValue: new Animated.Value(0),

@@ -24,10 +24,10 @@ spin () {
     this.spinValue,
     {
       toValue: 1,
-      duration: 400,  // change the the value from 0 to 1 in 400mm
+      duration: 500,  // change the the value from 0 to 1 in 400mm
       easing: Easing.lineary
     }
-  ).start(() => this.spin())
+  ).start()//.start(() => this.spin())
 } 
     
     render () {
@@ -39,10 +39,10 @@ spin () {
     <View style={styles.container}>
       <Animated.Image
         style={{
-          width: 227,
-          height: 200,
+          width: 32,
+          height: 32,
           transform: [{rotate: spin}] }}
-          source={{uri: 'http://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-10/256/pear.png'}}
+          source={{uri: 'http://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-10/256/red-apple.png'}}
       />
     </View>
   )
